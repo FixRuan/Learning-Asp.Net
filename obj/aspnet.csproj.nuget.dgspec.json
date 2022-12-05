@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/fixruan/Documentos/Apps/aspnet/aspnet.csproj": {}
+  },
+  "projects": {
+    "/home/fixruan/Documentos/Apps/aspnet/aspnet.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/fixruan/Documentos/Apps/aspnet/aspnet.csproj",
+        "projectName": "aspnet",
+        "projectPath": "/home/fixruan/Documentos/Apps/aspnet/aspnet.csproj",
+        "packagesPath": "/home/fixruan/.nuget/packages/",
+        "outputPath": "/home/fixruan/Documentos/Apps/aspnet/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/fixruan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
