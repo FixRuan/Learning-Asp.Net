@@ -1,5 +1,6 @@
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
 
 class HttpServer
 {
@@ -20,6 +21,9 @@ class HttpServer
       this.Controller.Start();
       Console.WriteLine($"Servidor HTTP está rodando na porta {this.Port}.");
       Console.WriteLine($"Para acessar, acesse: http://localhost:{this.Port}.");
+
+      Task taskHttpServer = Task.Run(() => AwaitRequests());
+      taskHttpServer.GetAwaiter().GetResult();
     }
     catch (Exception error)
     {
@@ -27,4 +31,36 @@ class HttpServer
     }
   }
 
+
+  private async Task AwaitRequests()
+  {
+    while (true)
+    {
+      Socket connect = await this.Controller.AcceptSocketAsync();
+      this.RequestsQtd++;
+
+      Task task = Task.Run(() => ProcessRequest(connect, this.RequestsQtd));
+    }
+  }
+
+  private void ProcessRequest(Socket connect, int requestNumber)
+  {
+    Console.WriteLine($"Processando request #{requestNumber}.");
+
+    if (connect.Connected)
+    {
+      byte[] bytesRequest = new byte[1024];
+      connect.Receive(bytesRequest, bytesRequest.Length, 0);
+
+      string requestText = Encoding.UTF8.GetString(bytesRequest).Replace((char)0, ' ').Trim();
+
+      if (requestText.Length > 0)
+      {
+        Console.WriteLine($"\n{requestText}\n");
+        connect.Close();
+      }
+    }
+
+    Console.WriteLine($"\n Request {requestNumber} finalizada");
+  }
 }

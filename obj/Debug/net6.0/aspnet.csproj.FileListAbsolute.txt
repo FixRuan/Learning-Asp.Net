@@ -1,0 +1,15 @@
+/home/fixruan/Documentos/Apps/aspnet/bin/Debug/net6.0/aspnet
+/home/fixruan/Documentos/Apps/aspnet/bin/Debug/net6.0/aspnet.deps.json
+/home/fixruan/Documentos/Apps/aspnet/bin/Debug/net6.0/aspnet.runtimeconfig.json
+/home/fixruan/Documentos/Apps/aspnet/bin/Debug/net6.0/aspnet.dll
+/home/fixruan/Documentos/Apps/aspnet/bin/Debug/net6.0/aspnet.pdb
+/home/fixruan/Documentos/Apps/aspnet/obj/Debug/net6.0/aspnet.csproj.AssemblyReference.cache
+/home/fixruan/Documentos/Apps/aspnet/obj/Debug/net6.0/aspnet.GeneratedMSBuildEditorConfig.editorconfig
+/home/fixruan/Documentos/Apps/aspnet/obj/Debug/net6.0/aspnet.AssemblyInfoInputs.cache
+/home/fixruan/Documentos/Apps/aspnet/obj/Debug/net6.0/aspnet.AssemblyInfo.cs
+/home/fixruan/Documentos/Apps/aspnet/obj/Debug/net6.0/aspnet.csproj.CoreCompileInputs.cache
+/home/fixruan/Documentos/Apps/aspnet/obj/Debug/net6.0/aspnet.dll
+/home/fixruan/Documentos/Apps/aspnet/obj/Debug/net6.0/refint/aspnet.dll
+/home/fixruan/Documentos/Apps/aspnet/obj/Debug/net6.0/aspnet.pdb
+/home/fixruan/Documentos/Apps/aspnet/obj/Debug/net6.0/aspnet.genruntimeconfig.cache
+/home/fixruan/Documentos/Apps/aspnet/obj/Debug/net6.0/ref/aspnet.dll
